@@ -17,12 +17,11 @@ public class Main {
         */
 
 
+        int a = 12;
+        int b = 25;
 
 
-
-
-
-        for (char ch1='ա'; ch1<='ֆ'; ch1++) {
+        for (char ch1 = 'ա'; ch1 <= 'ֆ'; ch1++) {
             System.out.println(ch1);
         }
 
