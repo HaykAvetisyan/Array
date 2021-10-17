@@ -2,16 +2,17 @@ package ArrayUtil;
 
 public class ArrayUtil {
     public static void main(String[] args) {
-        int[] array = {14, 2, 3, 5, 6, 7, 9, -8, 12, 56, 7, 5, 89, 74, 55, 13, 1, 0, 3, 53};
+        int[] array = {-14, -1, -55, -3, -5, -6, -7, -9, -8};
 
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
 
         System.out.println("-----------------");
-        int max = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > max) {
+        int max = array[0];
+
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max ) {
                 max = array[i];
             }
         }
@@ -20,8 +21,8 @@ public class ArrayUtil {
 
         System.out.println("------------------");
 
-        int min = 0;
-        for (int i = 0; i < array.length; i++) {
+        int min = array[0];
+        for (int i = 1; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
             }
